@@ -1,6 +1,7 @@
 #include "main.h"
 #include "Pickano.h"
 
+// The range of the random number to generate
 #define RANDOM_MIN 1
 #define RANDOM_MAX 100
 
