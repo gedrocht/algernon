@@ -3,14 +3,11 @@
 #include "pickano.h"
 
 using namespace std;
+TEST(UserTests, Play) {
+	ostringstream out;
+	istringstream in("21 23 22");
 
-TEST(PickanoTest, InitialOutputCorrect) {
-	ostringstream *out = new ostringstream();
-	istringstream *in = new istringstream("yes");
+	Pickano::play(in, out, 22);
 
-	Pickano::play(*in, *out);
-
-	string output = out->str();
-
-	EXPECT_EQ(output, "yes");
+	EXPECT_EQ(out.str(), "Too low\nToo high\nCorrect!\n");
 }

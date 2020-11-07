@@ -7,9 +7,18 @@ using namespace std;
 #pragma warning( pop ) 
 
 #pragma once
+/// <summary>
+/// A number-guessing game
+/// </summary>
 class Pickano
 {
 public:
-	static void play(istream &in, ostream &out);
+	/// <summary>
+	/// Starts the game
+	/// </summary>
+	/// <param name="in">Input stream to guess with</param>
+	/// <param name="out">Output stream to receive feedback from</param>
+	/// <param name="answer">Correct number that must be guessed</param>
+	static void play(istream &in, ostream &out, int answer);
 };
 
