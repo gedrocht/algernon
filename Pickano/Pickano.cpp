@@ -1,8 +1,6 @@
-#include <iostream>
+#include "Pickano.h"
 
-using namespace std;
-
-int main()
+void Pickano::play(istream &in, ostream &out)
 {
-    cout << "Hello World!\n";
+	out << "buh" << flush;
 }
