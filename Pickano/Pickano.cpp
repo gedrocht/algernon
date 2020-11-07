@@ -2,5 +2,7 @@
 
 void Pickano::play(istream &in, ostream &out)
 {
-	out << "buh" << flush;
+	string s;
+	in >> s;
+	out << s << flush;
 }

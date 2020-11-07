@@ -4,13 +4,13 @@
 
 using namespace std;
 
-TEST(TestCaseName, TestName) {
+TEST(PickanoTest, InitialOutputCorrect) {
 	ostringstream *out = new ostringstream();
-	istringstream *in = new istringstream();
+	istringstream *in = new istringstream("yes");
 
 	Pickano::play(*in, *out);
 
 	string output = out->str();
 
-	EXPECT_TRUE(output == "buh");
+	EXPECT_EQ(output, "yes");
 }
